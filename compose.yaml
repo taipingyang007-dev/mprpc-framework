@@ -1,0 +1,9 @@
+name: mprpc-deps
+
+services:
+  zookeeper:
+    image: zookeeper:3.9.3
+    container_name: mprpc-zookeeper
+    restart: unless-stopped
+    ports:
+      - "2181:2181"
